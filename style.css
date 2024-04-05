@@ -1,0 +1,139 @@
+#maintext {
+    transition: .2s;
+    font-size: 48px;
+    font-family: "Koulen", sans-serif;
+    color: rgb(57, 57, 57);
+}
+
+.hvr-underline-from-center {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0;
+    background: #e1e1e1;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+}
+
+.hero {
+    background-color: #e1e1e1;
+}
+
+#maintext:hover + .hero {
+    background-color: rgb(57, 57, 57);
+}
+
+.title {
+    color: #e1e1e1;
+}
+
+#subtitle {
+    color: rgb(57,57,57);
+}
+
+#maintext:hover {
+    font-size: 400%;
+    color: #e1e1e1;
+    letter-spacing: 0px;
+    -webkit-animation:spacing 3s infinite;
+    -ms-animation:spacing 3s infinite;
+    -o-animation:spacing 3s infinite;
+    animation: spacing 3s ininite;
+}
+
+@-webkit-keyframes spacing {
+    0% {letter-spacing: 0px;}
+    50% {letter-spacing: 5px}
+    100% {letter-spacing: 0px}
+}
+@-ms-keyframes spacing {
+    0% {letter-spacing: 0px;}
+    50% {letter-spacing: 5px}
+    100% {letter-spacing: 0px}
+}
+@-o-keyframes spacing {
+    0% {letter-spacing: 0px;}
+    50% {letter-spacing: 5px}
+    100% {letter-spacing: 0px}
+}
+
+.rainbow:hover {
+    -webkit-animation:rainbow 1s infinite;
+    -ms-animation:rainbow 1s infinite;
+    -o-animation:rainbow 1s infinite;
+    animation:rainbow 1s infinite;
+    }
+    @-webkit-keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
+    @-ms-keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
+    @-o-keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
+    @keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+    }
